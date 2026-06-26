@@ -484,43 +484,165 @@ export default function ProposalPage() {
     },
     {
       id: 10,
-      title: "10. Action & Next Steps",
+      title: "10. Investment & Package Plans",
+      subtitle: "Tailored Web Solutions To Align with Your Growth",
+      icon: <Layers className="w-5 h-5 text-emerald-500" />,
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch h-full">
+          {/* Package 1: Basic Launch */}
+          <div className="bg-slate-50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/60 rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden">
+            <div className="space-y-4">
+              <div className="flex justify-between items-start">
+                <div>
+                  <span className="text-[9px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">Option A</span>
+                  <h3 className="text-sm sm:text-base font-black text-[#0F4C81] dark:text-[#1DA1F2] uppercase">Essential Clinical Web</h3>
+                </div>
+                <div className="text-right">
+                  <span className="text-[10px] text-slate-400 block font-bold">BUDGET</span>
+                  <div className="flex flex-col items-end">
+                    <span className="text-[11px] text-slate-400 dark:text-slate-500 line-through">65,000 PKR</span>
+                    <span className="text-base sm:text-lg font-black text-emerald-600 dark:text-emerald-400">45,000 PKR</span>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                An elegant, highly responsive clinical presentation web portfolio tailored to establish rapid search authority for Dr. Jabbar in Saddar and greater Hyderabad.
+              </p>
+
+              <div className="border-t border-slate-100 dark:border-slate-800/80 pt-3 space-y-2">
+                {[
+                  "Max 5 Clean-Engineered Pages",
+                  "No Admin Panel (Fast Static Code)",
+                  "2 Full Design & Content Revisions",
+                  "Direct Patient Contact & Scheduling Form",
+                  "Bilingual Sindh Region Landmarks Support",
+                  "Full SEO & Mobile-First Loading Speed"
+                ].map((feature, i) => (
+                  <div key={i} className="flex items-center gap-2 text-[10px] text-slate-600 dark:text-slate-400">
+                    <Check className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                    <span>{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-4 border-t border-slate-150/40 dark:border-slate-800/40 mt-4 flex items-center justify-between">
+              <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Timeline: 5-7 Days</span>
+              <span className="text-[9px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded font-black uppercase">Standard Tier</span>
+            </div>
+          </div>
+
+          {/* Package 2: Premium Hub */}
+          <div className="bg-[#0b241b] dark:bg-emerald-950/20 border-2 border-emerald-500/40 rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden shadow-lg shadow-emerald-500/5">
+            {/* Recommended Corner Badge */}
+            <div className="absolute top-0 right-0 bg-emerald-500 text-slate-900 text-[8px] font-black uppercase tracking-widest py-1 px-4 rounded-bl-xl">
+              Recommended Choice
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex justify-between items-start">
+                <div>
+                  <span className="text-[9px] font-black text-emerald-400 uppercase tracking-widest">Option B</span>
+                  <h3 className="text-sm sm:text-base font-black text-white uppercase tracking-tight">Enterprise Clinical Hub</h3>
+                </div>
+                <div className="text-right">
+                  <span className="text-[10px] text-emerald-400 block font-bold">BUDGET</span>
+                  <div className="flex flex-col items-end">
+                    <span className="text-[11px] text-emerald-500/60 line-through">99,000 PKR</span>
+                    <span className="text-base sm:text-lg font-black text-emerald-400">70,000 PKR</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-[11px] text-slate-300 dark:text-slate-300 leading-relaxed">
+                A fully-equipped, scalable medical directory and clinical information management panel for Dr. Jabbar's academic, teaching, and orthodontic practice.
+              </p>
+
+              <div className="border-t border-emerald-500/20 pt-3 space-y-2">
+                {[
+                  "7 or More Pages as per clinical need",
+                  "Dedicated Secure Admin Control Panel",
+                  "4 Complete Design & Logic Revisions",
+                  "Integrated Live-Updates Panel & Content Editor",
+                  "Advanced 3D Smile Scan Booking flow",
+                  "Custom interactive patient resources and FAQs",
+                  "Post-Launch Server Tuning & Security Upgrades",
+                  "3-Month Post-Launch Support (50% fee discount due to reference)"
+                ].map((feature, i) => (
+                  <div key={i} className="flex items-center gap-2 text-[10px] text-slate-200 dark:text-slate-300">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <span className={`font-medium ${i === 7 ? "text-emerald-300 font-extrabold" : ""}`}>{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-4 border-t border-emerald-500/20 mt-4 flex items-center justify-between">
+              <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-widest">Timeline: 10-12 Days</span>
+              <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded font-black uppercase tracking-widest">High-Trust Tier</span>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 11,
+      title: "11. Action, Next Steps & Closure",
       subtitle: "Moving Forward Boldly",
       icon: <ArrowRight className="w-5 h-5 text-emerald-500" />,
       content: (
-        <div className="flex flex-col items-center justify-center text-center h-full max-w-3xl mx-auto space-y-6">
-          <div className="w-16 h-16 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600">
-            <CheckCircle2 className="w-10 h-10" />
-          </div>
-          <div className="space-y-2">
-            <h3 className="text-lg sm:text-3xl font-black text-slate-900 dark:text-white uppercase leading-tight font-display">
-              Ready to Launch Dr. Jabbar's Digital Hub
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center h-full">
+          {/* Action roadmap steps */}
+          <div className="md:col-span-3 space-y-4">
+            <h3 className="text-xs font-black text-[#0F4C81] dark:text-[#1DA1F2] uppercase tracking-wider">
+              Immediate Deal Execution Roadmap
             </h3>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-xl mx-auto">
-              We are poised to execute the final domain configuration and deploy the live clinical portal to Google Cloud Run. Follow these easy next steps to initiate launch.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pt-4">
-            <div className="bg-slate-50 dark:bg-slate-900/40 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 space-y-1">
-              <span className="text-emerald-500 font-extrabold text-xs">STEP 01</span>
-              <h4 className="text-xs font-black text-slate-800 dark:text-white uppercase">Approve Proposal</h4>
-              <p className="text-[10px] text-slate-400">Review the live demo features and approve the layout flow.</p>
-            </div>
-            <div className="bg-slate-50 dark:bg-slate-900/40 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 space-y-1">
-              <span className="text-emerald-500 font-extrabold text-xs">STEP 02</span>
-              <h4 className="text-xs font-black text-slate-800 dark:text-white uppercase">Provide Domain</h4>
-              <p className="text-[10px] text-slate-400">Secure the clinical domain or assign server redirection records.</p>
-            </div>
-            <div className="bg-slate-50 dark:bg-slate-900/40 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 space-y-1">
-              <span className="text-emerald-500 font-extrabold text-xs">STEP 03</span>
-              <h4 className="text-xs font-black text-slate-800 dark:text-white uppercase">Configure Keys</h4>
-              <p className="text-[10px] text-slate-400">Input standard Gemini API secrets to enable live update services.</p>
+            <div className="space-y-3">
+              {[
+                { step: "01", title: "Select Tier & Approve", desc: "Select Option A (45K) or Option B (70K) based on your target operational requirements." },
+                { step: "02", title: "Initiate Brand Alignment", desc: "Share Dr. Jabbar's professional high-res photographs, clinical timing specifics, and academic research lists." },
+                { step: "03", title: "Domain Routing & Deployment", desc: "Configure domain credentials and host the production engine live on Google Cloud Run container loops." }
+              ].map((item, idx) => (
+                <div key={idx} className="flex gap-3 bg-slate-50 dark:bg-slate-900/40 p-3 rounded-xl border border-slate-100 dark:border-slate-800">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 text-xs font-black shrink-0">
+                    {item.step}
+                  </span>
+                  <div>
+                    <h4 className="text-xs font-extrabold text-slate-800 dark:text-white uppercase">{item.title}</h4>
+                    <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="pt-4 text-xs font-bold text-slate-500 dark:text-slate-400">
-            For direct inquiries, contact MetaWave Innovations at <span className="text-emerald-600 dark:text-emerald-400">info@metawaveinnovations.com</span>
+          {/* Official Founder & CEO Signature Block */}
+          <div className="md:col-span-2 bg-slate-50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/60 p-5 rounded-2xl flex flex-col justify-between h-full space-y-4">
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <MetaWaveLogo className="w-10 h-10" />
+                <div>
+                  <span className="text-[8px] font-black text-emerald-500 block">AUTHORIZED SIGNATURE</span>
+                  <h4 className="text-[10px] font-black text-slate-800 dark:text-white uppercase tracking-wider">METAWAVE INNOVATIONS</h4>
+                </div>
+              </div>
+              <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-relaxed">
+                We are fully prepared to elevate Dr. Jabbar's clinical brand into Hyderabad's premier orthodontic digital resource. Let's build a trusted platform together.
+              </p>
+            </div>
+
+            <div className="pt-4 border-t border-slate-200/50 dark:border-slate-800/80 space-y-1">
+              <div className="font-mono text-xs italic font-black text-emerald-600 dark:text-emerald-400">
+                /s/ MetaWave Founder & CEO
+              </div>
+              <div className="text-[10px] font-black text-slate-800 dark:text-white uppercase">
+                MetaWave Innovations
+              </div>
+              <div className="text-[9px] text-slate-400 uppercase font-bold tracking-widest">
+                Founder and CEO
+              </div>
+            </div>
           </div>
         </div>
       )
