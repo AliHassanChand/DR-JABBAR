@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Dr. Abdul Jabbar Orthodontics \u0026 Smile Design Center",
+  "description": "Premium orthodontic care and smile transformation in Hyderabad, Pakistan by Dr. Abdul Jabbar, BDS, FCPS, FFD (RCSI), Associate Professor \u0026 Consultant Orthodontist with 14+ years of experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
